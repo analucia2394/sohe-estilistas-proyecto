@@ -2,12 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Registro</title>
 </head>
 <body>
     <header>
         <h1>Registro</h1>
-    </header>
+        <nav>
+            <a target="_blank" href="./index.html">Página principal</a>
+            <a target="_blank" href="./servicios.html">Nuestros servicios</a>
+            <a target="_blank" href="./ubicacion.html">Dónde encontrarnos</a>
+            <a href="./registro.html">Registro</a>
+            <a href="./login.html">Login</a>
+        </nav>  
+    </header>      
+        
+        <form action="database.php" method="POST" class="formulary">
+            <section class="fond">
+                <div class="into">
+                    <div class="fotos">
+                        <div id="campos">
+                <p>
+                    <label for = "name" class="name" >Nombre</label>
+                    <input type = "text" name = "name" id="name" required="obligatorio" placeholder="Escribe el nombre">
+                </p>
+
+                <p>
+                    <label for="password" class="password">Contraseña</label>
+                    <input type="text" name="password" id="password" required="obligatorio" placeholder="Escribe la contraseña">
+                </p>   
+    
+                <p>
+                    <label for="email" class="email">Correo</label>
+                    <input type="email" name="email" id="email" required="email" placeholder="Escribe el email">
+                </p>
+    
+                <p>
+                    <label for="phone" class="phone">Teléfono</label>
+                    <input type="text" name = "phone" id="phone" required="obligatorio" placeholder="Escribe el teléfono">
+                </p>
+    
+                <p>
+                    <label for="type" class="type">Tipo de usuario</label>
+                    <input type="text" name="type" id="type" required="obligatorio" placeholder="Escribe el tipo de usuario">
+                </p>
+    
+                <button type="submit" name="registrar" id="registrar" class="butt"><p>Registrar</p></button>
+            </div>
+            </div>
+            </div>
+            </section>
+        </form>
 </body>
 </html>

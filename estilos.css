@@ -173,6 +173,13 @@ footer div {
 	justify-content: space-evenly;
 }
 
+.redes{
+	display: flex;
+	justify-content: end;
+	margin-left: 50px;
+	padding: 0 50px;
+}
+
 .fotos {
 	display: flex;
 	justify-content: space-evenly;
@@ -300,4 +307,87 @@ footer div {
 	color: var(--blanco);
 	font-weight: bold;
 	text-align: center;
+}
+
+.location iframe{
+	text-align: center;
+	border-radius: 24px;
+}
+
+.redes nav{
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 1;
+	flex-basis: 5px 5px;
+}
+
+
+
+.formulary label{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.butt {
+    width: 80%;
+    margin: 40px 10px;
+    border-radius: 50px;
+    background-color: var(--amarillito);
+    font-size: x-large;
+	font-weight: bolder;
+	padding: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color:white
+}
+
+.name {
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.email {
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.phone {
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.password {
+	color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.type {
+	color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#campos {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 80px;
+
+	margin: 30px;
+}
+
+input{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 50px;
+	border-radius: 40px;
 }
