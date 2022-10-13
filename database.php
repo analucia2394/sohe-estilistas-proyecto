@@ -5,23 +5,21 @@ $db_user = "root";
 $db_pasword = "";
 $db_name = "soheestilistas";
 
-$query = mysqli_connect($db_host, $db_user, $db_pasword,$db_name);
+$query = mysqli_connect($db_host, $db_user, $db_pasword, $db_name);
 
 if (!$query) {
     die( "Error" . mysqli_connect_error());
 }
 echo "Conectado...";
 
-$name = $_POST["name"];
-$password = $_POST["password"];
+$names = $_POST["names"];
+$passwords = $_POST["passwords"];
 $email = $_POST["email"];
 $phone = $_POST["phone"];
-$type = $_POST["type"];
-
 
 //Consulta
 
-$insert ="INSERT INTO soheestilistas (id, name, password, email, phone, type) value ('0', '$name', '$password '$email', '$phone', '$type')";
+$insert ="INSERT INTO user (id, names, passwords, email, phone) value ('0', '$names', '$passwords', '$email', '$phone')";
 
 $ir = mysqli_query($query, $insert);
 if($ir) {
